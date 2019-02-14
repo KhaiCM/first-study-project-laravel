@@ -48,7 +48,7 @@ Route::get('users/logout', 'Auth\LoginController@logout');
 Route::get('users/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('users/login', 'Auth\LoginController@login');
 // admin 
-Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'manager'), function () 
+Route::group(array('prefix' => 'admin', 'namespace' => 'Admin'), function () 
 {
 	Route::get('users', [ 'as' => 'admin.user.index', 'uses' => 'UsersController@index']);
 	Route::get('roles', 'RolesController@index');

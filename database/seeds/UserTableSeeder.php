@@ -40,6 +40,15 @@ class UserTableSeeder extends Seeder
     			'updated_at'
     			=> new DateTime,
     		],
+            [
+                'name' => 'admin',
+                'email' => 'admin@gmail.com',
+                'password' => bcrypt('123456'),
+                'created_at'
+                => new DateTime,
+                'updated_at'
+                => new DateTime,
+            ],
     	]);
     }
 }
