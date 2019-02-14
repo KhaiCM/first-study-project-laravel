@@ -1,4 +1,4 @@
 <?php
 return [
-	'subtitle' => 'Fastest way to learn Laravel',
+	'subtitle' => 'Chào mừng bạn đến với trang leaning-laravel',
 ];
